@@ -90,20 +90,20 @@
 
       <ul data-submenu-title="ช่างฝีมือ">
 
-				<li class="active"><a><i class="sl sl-icon-user"></i> รายการช่าง</a>
+				<li><a><i class="sl sl-icon-user"></i> รายการช่าง</a>
 					<ul>
-						<li class="active"><a href="tech_list.html">ช่างในระบบ <span class="nav-tag green">6</span></a></li>
+						<li><a href="tech_list.html">ช่างในระบบ <span class="nav-tag green">6</span></a></li>
             <li><a href="tech_list.html">ช่างแนะนำ <span class="nav-tag blue">6</span></a></li>
 						<li><a href="tech_list.html">สมัครใหม่ รอยืนยัน<span class="nav-tag yellow">1</span></a></li>
 						<li><a href="tech_list.html">ไม่ผ่าน <span class="nav-tag red">2</span></a></li>
 					</ul>
 				</li>
-				<li><a href="tech_map.html"><i class="sl sl-icon-layers"></i> Map ช่าง</a></li>
+        <li class="active"><a href="tech_map.html"><i class="sl sl-icon-layers"></i> Map ช่าง</a></li>
 
 			</ul>
 
 
-      
+
 
 		</div>
 	</div>
@@ -143,82 +143,16 @@
         <div class="dashboard-list-box margin-top-0">
 
 					<!-- Sort by -->
-					<div class="sort-by">
-						<div class="sort-by-select">
-							<select data-placeholder="Default order" class="chosen-select-no-single">
-								<option>ดูทั้งหมด</option>
-								<option>ยืนยันแล้ว</option>
-								<option>รอการยืนยัน</option>
-								<option>ไม่ผ่าน</option>
-							</select>
-						</div>
-					</div>
-
-
-
-
-					<h4>รายละเอียด ช่างต้อม งานดี</h4>
+					<h4>ดูช่างบน Map</h4>
 					<ul>
+            <li>
+              <div id="map-container">
+          		    <div id="map" data-map-zoom="9" data-map-scroll="true">
+          		        <!-- map goes here -->
+          		    </div>
+          		</div>
+            </li>
 
-						<li class="pending-booking">
-							<div class="list-box-listing bookings">
-								<div class="list-box-listing-img"><img src="../assets/images/user-avatar_7.jpg" alt=""></div>
-								<div class="list-box-listing-content">
-									<div class="inner">
-										<h3>ช่างต้อม งานดี <span class="booking-status pending">รอการยืนยัน</span></h3>
-
-										<div class="inner-booking-list">
-											<h5>สมัครวัน:</h5>
-											<ul class="booking-list">
-												<li class="highlighted">3/8/2018 at 15:30 P.M</li>
-											</ul>
-										</div>
-
-										<div class="inner-booking-list">
-											<h5>ประเภทงาน:</h5>
-											<ul class="booking-list">
-												<li class="highlighted">ช่างทาสี</li>
-											</ul>
-										</div>
-
-										<div class="inner-booking-list">
-											<h5>จังหวัด:</h5>
-											<ul class="booking-list">
-												<li>นครพนม</li>
-												<li>john@example.com</li>
-												<li>081-100-7753</li>
-											</ul>
-										</div>
-
-                    <div class="inner-booking-list">
-											<h5>ตำแหน่งที่อยู่:</h5>
-											<ul class="booking-list">
-												<li>ต.คอกกระบือ</li>
-												<li>อ.เมืองสมุทรสาคร</li>
-												<li>จ.สมุทรสาคร</li>
-                        <li>10310</li>
-											</ul>
-										</div>
-
-                    <div class="inner-booking-list">
-                      <h5>รายละเอียดงาน:</h5>
-                      <p>
-                        1. มีประสบการณ์ด้านการประกอบงานไม้ หรือติดตั้งระบบไฟฟ้า อย่างน้อย 1-2 ปี<br />
-                        2. พร้อมการเรียนรู้สิ่งใหม่ และสามารถทำงานภายใต้ภาวะกดดันได้ดี<br />
-                        3. กระตือรือร้นและแก้ปัญหาเฉพาะหน้าได้ดี<br />
-                        4. มีภูมิลำเนาใกล้หรืออยู่ในบ้านถวายจะพิจารณาเป็นพิเศษ<br />
-                        5. มีความรับผิดชอบ<br />
-                      </p>
-                    </div>
-
-
-
-
-									</div>
-								</div>
-							</div>
-
-						</li>
 
 
 
@@ -271,6 +205,12 @@
 <script type="text/javascript" src="../assets/scripts/jquery-ui.min.js"></script>
 <script type="text/javascript" src="../assets/scripts/tooltips.min.js"></script>
 <script type="text/javascript" src="../assets/scripts/custom.js"></script>
+
+<!-- Maps -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx41m2FUw72t1drRQP3NOHwct6dYqGU1o&libraries=places&callback=initAutocomplete"></script>
+<script type="text/javascript" src="../assets/scripts/infobox.min.js"></script>
+<script type="text/javascript" src="../assets/scripts/markerclusterer.js"></script>
+<script type="text/javascript" src="../assets/scripts/maps2.js"></script>
 
 
 </body>
