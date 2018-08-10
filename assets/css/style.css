@@ -228,6 +228,19 @@ a:hover { text-decoration: none; color: #333;}
 img { max-width: 100%; }
 
 
+.avatar_dash{
+  max-width: 100px;
+      height: auto;
+      /* overflow: hidden; */
+      border-radius: 50%;
+      // position: absolute;
+      left: -30px;
+      /* top: -12px; */
+      /* image-rendering: -webkit-optimize-contrast; */
+}
+
+
+
 /* ---------------------------------- */
 /* Header
 ------------------------------------- */
@@ -9382,6 +9395,7 @@ a.dashboard-responsive-nav-trigger { display: none; }
 .dashboard-nav ul li span.nav-tag.green { background-color: #64bc36; }
 .dashboard-nav ul li span.nav-tag.yellow { background-color: #b9be1c; }
 .dashboard-nav ul li span.nav-tag.red { background-color: #ee3535; }
+.dashboard-nav ul li span.nav-tag.blue { background-color: #0e76c2; }
 
 
 /* Dropdown Styles */

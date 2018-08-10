@@ -1,5 +1,327 @@
-sdsdsd
+<!DOCTYPE html>
+<head>
 
-sdsd
+<!-- Basic Page Needs
+================================================== -->
+<title>Listeo</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<data value="sds"></data>
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/colors/green.css" id="colors">
+<link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header Container
+================================================== -->
+<header id="header-container" class="fixed fullwidth dashboard" style="background-color: #2a2a2a;">
+
+	<!-- Header -->
+	<div id="header" class="not-sticky">
+		<div class="container">
+
+			<!-- Left Side Content -->
+			<div class="left-side">
+
+				<!-- Logo -->
+				<div id="logo">
+					<a href="index.html"><img src="../assets/images/logo3.png" alt="" style="background-color: #000;"></a>
+					<a href="index.html" class="dashboard-logo"><img src="../assets/images/logo3.png" alt=""></a>
+				</div>
+
+
+
+				<!-- Main Navigation -->
+
+				<div class="clearfix"></div>
+				<!-- Main Navigation / End -->
+
+			</div>
+			<!-- Left Side Content / End -->
+
+			<!-- Right Side Content / End -->
+			<div class="right-side">
+				<!-- Header Widget -->
+				<div class="header-widget" style="border:none;">
+
+					<!-- User Menu -->
+
+
+					<a href="dashboard-add-listing.html" class="button border with-icon hide">Add Listing <i class="sl sl-icon-plus"></i></a>
+				</div>
+				<!-- Header Widget / End -->
+			</div>
+			<!-- Right Side Content / End -->
+
+		</div>
+	</div>
+	<!-- Header / End -->
+
+</header>
+<div class="clearfix"></div>
+<!-- Header Container / End -->
+
+
+<!-- Dashboard -->
+<div id="dashboard">
+
+	<!-- Navigation
+	================================================== -->
+
+	<!-- Responsive Navigation Trigger -->
+	<a href="#" class="dashboard-responsive-nav-trigger"><i class="fa fa-reorder"></i> Dashboard Navigation</a>
+
+	<div class="dashboard-nav">
+		<div class="dashboard-nav-inner">
+
+			<ul data-submenu-title="Main">
+				<li class="active"><a href="dashboard.html"><i class="sl sl-icon-settings"></i> Dashboard</a></li>
+				<li><a href="messages.html"><i class="sl sl-icon-envelope-open"></i> Messages <span class="nav-tag messages">6</span></a></li>
+        <li><a href="category.html"><i class="sl sl-icon-layers"></i> ประเภทงาน</a></li>
+			</ul>
+
+      <ul data-submenu-title="ช่างฝีมือ">
+
+				<li><a><i class="sl sl-icon-user"></i> รายการช่าง</a>
+					<ul>
+						<li><a href="tech_list.html">ช่างในระบบ <span class="nav-tag green">6</span></a></li>
+            <li><a href="tech_list.html">ช่างแนะนำ <span class="nav-tag blue">6</span></a></li>
+						<li><a href="tech_list.html">สมัครใหม่ รอยืนยัน<span class="nav-tag yellow">1</span></a></li>
+						<li><a href="tech_list.html">ไม่ผ่าน <span class="nav-tag red">2</span></a></li>
+					</ul>
+				</li>
+
+			</ul>
+
+
+      <ul data-submenu-title="ใบรับงาน">
+
+				<li><a><i class="sl sl-icon-note"></i> ใบรับงาน</a>
+					<ul>
+						<li><a href="#">ใบรับงานในระบบ <span class="nav-tag green">6</span></a></li>
+						<li><a href="#">ใบรับงาน ยกเลิก <span class="nav-tag red">2</span></a></li>
+					</ul>
+				</li>
+
+			</ul>
+
+		</div>
+	</div>
+	<!-- Navigation / End -->
+
+
+	<!-- Content
+	================================================== -->
+	<div class="dashboard-content">
+
+		<!-- Titlebar -->
+		<div id="titlebar">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Dashboard</h2>
+					<!-- Breadcrumbs -->
+					<nav id="breadcrumbs">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li>Dashboard</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- Content -->
+		<div class="row">
+
+			<!-- Item -->
+			<div class="col-lg-3 col-md-6">
+				<div class="dashboard-stat color-1">
+					<div class="dashboard-stat-content"><h4>6</h4> <span>ข้อความ ต้องการช่าง</span></div>
+					<div class="dashboard-stat-icon"><i class="im im-icon-Mail-Inbox"></i></div>
+				</div>
+			</div>
+
+			<!-- Item -->
+			<div class="col-lg-3 col-md-6">
+				<div class="dashboard-stat color-2">
+					<div class="dashboard-stat-content"><h4>726</h4> <span>ยอด <br />การเข้าชม</span></div>
+					<div class="dashboard-stat-icon"><i class="im im-icon-Line-Chart"></i></div>
+				</div>
+			</div>
+
+
+			<!-- Item -->
+			<div class="col-lg-3 col-md-6">
+				<div class="dashboard-stat color-3">
+					<div class="dashboard-stat-content"><h4>95</h4> <span>ยอด <br />สมัครช่างใหม่</span></div>
+					<div class="dashboard-stat-icon"><i class="im im-icon-Add-UserStar"></i></div>
+				</div>
+			</div>
+
+			<!-- Item -->
+			<div class="col-lg-3 col-md-6">
+				<div class="dashboard-stat color-4">
+					<div class="dashboard-stat-content"><h4>126</h4> <span>ยอด <br />งานสำเร็จ</span></div>
+					<div class="dashboard-stat-icon"><i class="im im-icon-Heart"></i></div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+
+			<!-- Recent Activity -->
+			<div class="col-lg-6 col-md-12">
+				<div class="dashboard-list-box with-icons margin-top-20">
+					<h4>กิจกรรมล่าสุด </h4>
+					<ul>
+
+						<li>
+							<i class="list-box-icon sl sl-icon-star"></i> ต้องการจ้าง <strong><a href="#">ช่างแดง ปูนดี</a></strong> มารับงานปูนที่ โครงการหมู่บ้านหนองแขม ท่าไม้เมือง!
+							<a href="#" class="close-list-item"><i class="fa fa-close"></i></a>
+						</li>
+
+            <li>
+							<i class="list-box-icon sl sl-icon-user"></i> <strong><a href="#">ช่างสง ฝ้างานดี</a></strong> ต้องการสมัครเป็นช่างฝ้า ในระบบ จังหวัดสงขลา
+							<a href="#" class="close-list-item"><i class="fa fa-close"></i></a>
+						</li>
+
+            <li>
+							<i class="list-box-icon sl sl-icon-user"></i> <strong><a href="#">ช่างดำ งานเหล็ก</a></strong> ต้องการสมัครเป็นช่างเหล็ก ในระบบ จังหวัดลำปาง
+							<a href="#" class="close-list-item"><i class="fa fa-close"></i></a>
+						</li>
+
+            <li>
+							<i class="list-box-icon sl sl-icon-star"></i> ต้องการจ้าง <strong><a href="#">นายช่างเมือง ไม้สวย</a></strong> มารับงานไม้ เฟอร์นิเจอร์ที่ ของโรงแรมบนเกาะช้าง ด่วนมาก!
+							<a href="#" class="close-list-item"><i class="fa fa-close"></i></a>
+						</li>
+
+            <li>
+							<i class="list-box-icon sl sl-icon-star"></i> ต้องการจ้าง <strong><a href="#">ช่างแดง ปูนดี</a></strong> มารับงานปูนที่ โครงการหมู่บ้านหนองแขม ท่าไม้เมือง!
+							<a href="#" class="close-list-item"><i class="fa fa-close"></i></a>
+						</li>
+
+            <li>
+							<i class="list-box-icon sl sl-icon-user"></i> <strong><a href="#">ช่างสง ฝ้างานดี</a></strong> ต้องการสมัครเป็นช่างฝ้า ในระบบ จังหวัดสงขลา
+							<a href="#" class="close-list-item"><i class="fa fa-close"></i></a>
+						</li>
+
+            <li>
+							<i class="list-box-icon sl sl-icon-user"></i> <strong><a href="#">ช่างดำ งานเหล็ก</a></strong> ต้องการสมัครเป็นช่างเหล็ก ในระบบ จังหวัดลำปาง
+							<a href="#" class="close-list-item"><i class="fa fa-close"></i></a>
+						</li>
+
+            <li>
+							<i class="list-box-icon sl sl-icon-star"></i> ต้องการจ้าง <strong><a href="#">นายช่างเมือง ไม้สวย</a></strong> มารับงานไม้ เฟอร์นิเจอร์ที่ ของโรงแรมบนเกาะช้าง ด่วนมาก!
+							<a href="#" class="close-list-item"><i class="fa fa-close"></i></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+
+			<!-- Invoices -->
+			<div class="col-lg-6 col-md-12">
+				<div class="dashboard-list-box invoices with-icons margin-top-20">
+					<h4>ใบรับงาน วันนี้</h4>
+					<ul>
+
+						<li><i class="list-box-icon sl sl-icon-doc"></i>
+							<strong>ช่างแดง ปะปา</strong> ไม่ว่างรับงาน ขอยกเลิก
+							<ul>
+								<li class="unpaid">Unpaid</li>
+								<li>Order: #00124</li>
+								<li>Date: 20/07/2017</li>
+							</ul>
+							<div class="buttons-to-right">
+								<a href="#" class="button gray">ดูรายละเอียด</a>
+							</div>
+						</li>
+
+						<li><i class="list-box-icon sl sl-icon-doc"></i>
+							<strong>ช่างเก่ง ฟ้าทีบา</strong> รับงาน <strong>ดร.อุดม</strong> งานไม้ รร. ม่านดีร่มเย็น
+							<ul>
+								<li class="paid">Paid</li>
+								<li>Order: #00108</li>
+								<li>Date: 14/07/2017</li>
+							</ul>
+							<div class="buttons-to-right">
+								<a href="#" class="button gray">ดูรายละเอียด</a>
+							</div>
+						</li>
+
+						<li><i class="list-box-icon sl sl-icon-doc"></i>
+							<strong>ช่างเป็ง ลวดลาย</strong> รับงาน <strong>ครูสมปอง</strong> งานสี โรงเรียนอ้อมน้อย
+							<ul>
+								<li class="paid">Paid</li>
+								<li>Order: #00097</li>
+								<li>Date: 10/07/2017</li>
+							</ul>
+							<div class="buttons-to-right">
+								<a href="#" class="button gray">ดูรายละเอียด</a>
+							</div>
+						</li>
+
+						<li><i class="list-box-icon sl sl-icon-doc"></i>
+							<strong>ช่างยุทร</strong> รับงาน <strong>คุณนิวตั้น</strong> งานเหล็ก รั้วประตูบ้าน
+							<ul>
+								<li class="paid">Paid</li>
+								<li>Order: #00091</li>
+								<li>Date: 30/06/2017</li>
+							</ul>
+							<div class="buttons-to-right">
+								<a href="#" class="button gray">ดูรายละเอียด</a>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+
+
+			<!-- Copyrights -->
+			<div class="col-md-12">
+				<div class="copyrights">© 2017 Listeo. All Rights Reserved.</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- Content / End -->
+
+
+</div>
+<!-- Dashboard / End -->
+
+
+</div>
+<!-- Wrapper / End -->
+
+
+<!-- Scripts
+================================================== -->
+<script type="text/javascript" src="../assets/scripts/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="../assets/scripts/mmenu.min.js"></script>
+<script type="text/javascript" src="../assets/scripts/chosen.min.js"></script>
+<script type="text/javascript" src="../assets/scripts/slick.min.js"></script>
+<script type="text/javascript" src="../assets/scripts/rangeslider.min.js"></script>
+<script type="text/javascript" src="../assets/scripts/magnific-popup.min.js"></script>
+<script type="text/javascript" src="../assets/scripts/waypoints.min.js"></script>
+<script type="text/javascript" src="../assets/scripts/counterup.min.js"></script>
+<script type="text/javascript" src="../assets/scripts/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../assets/scripts/tooltips.min.js"></script>
+<script type="text/javascript" src="../assets/scripts/custom.js"></script>
+
+
+</body>
+</html>
